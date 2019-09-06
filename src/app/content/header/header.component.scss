@@ -1,0 +1,51 @@
+@import '../../../sass/variables';
+
+.header{
+    //background-image: $headerBackImg;
+    //background-repeat:repeat-x;
+    height: $headerHeight;
+    max-width:$maxWindowWidth !important;
+    background-color: #000000 !important;
+
+}
+.header2{
+    background:rgba(0, 0, 0, 0.2) !important;
+    max-width:100% !important;
+    height:2px;
+    margin-top:81px;
+}
+.header__link{
+    color:$headerLinkColor !important;
+    font-family:$headerLinkFont;
+    font-size: 13px;
+    margin-left: 13px;
+}
+.header__link--disable{
+    color:$headerLinkDisableColor !important;
+}
+
+.header__link--right{
+    margin-right:$headerLinkMarginR !important;
+}
+
+.blocksep{
+    background-image: $headerSepBackImg;
+    height: 104px;
+    background-repeat: repeat-x;
+    background-position-y: 79px;
+}
+@media screen and (max-width: $screenMediumCustomLabels - 1) {
+    .navbar-nav{
+        margin-top:-68px;
+        width:90% !important;
+        float:left;
+    }
+    .navbar-toggler-icon{
+        margin-top:26px !important;
+    }
+}
+@media screen and (min-width: $screenMediumCustomLabels) {
+    .navbar-nav{
+        margin-top:0px;
+    }
+}

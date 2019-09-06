@@ -1,0 +1,24 @@
+<div class="alert alert-danger MainFormCls" role="alert" *ngIf="dangermsg!=''">{{dangermsg}}</div>
+<div class="containerGrid" *ngIf="dangermsg==''" >
+    <div class="grid" *ngFor="let user of users" (click)="showDetail(user.id)" >
+        <div class="grid__leftdata" >
+            <div class="grid__leftdata__number" >{{user.place}}</div>
+            <div class="grid__leftdata__avatar" >
+                <img src="/assets/avatars/{{user.avatar}}" />
+            </div>
+            <div class="grid__leftdata__name" >{{user.name}}</div>
+        </div>
+        <div class="grid__rightdata" >
+            <div class="grid__rightdata__score" ><div class="grid__rightdata__score_label" >SCORE</div>{{user.score}}</div>
+            <div class="grid__rightdata__timeR" ></div>
+            <div class="grid__rightdata__time" ><div class="grid__rightdata__time_label" >TIME</div>{{user.time}}</div>
+            <div class="grid__rightdata__timeL" ></div>
+            <div class="grid__rightdata__gender" ><div class="grid__rightdata_gender__label" >GENDER</div>{{user.gender}}</div>
+            <div class="grid__rightdata__age" ><div class="grid__rightdata__age__label" >AGE</div>{{user.age}}</div>
+            <div class="grid__rightdata__bib" ><div class="grid__rightdata__bib__label" >BIB</div>{{user.bib}}</div>
+        </div>
+        <div class="grid_detail" *ngIf="user.id===selectedId" >
+            <app-detail-grid [userdata]="userdata" [selectedId]="selectedId" ></app-detail-grid>
+        </div> 
+    </div>
+</div>

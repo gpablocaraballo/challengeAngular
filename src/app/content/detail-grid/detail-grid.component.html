@@ -1,0 +1,65 @@
+<div class="main" *ngIf="show==true" >
+    <div class="main__detailtop">
+            <div class="main__detailtop__left" >STRENGTH</div>
+            <div class="main__detailtop__center main__detailtop__center--color1" >{{userdata.strength}}</div>
+            <div class="main__detailtop__right" >
+                <div class="main__detailtop__right__blockfill main__detailtop__right__blockfill--c1"  [style.width.%]="userdata.strength"  ></div>
+                <div class="main__detailtop__right__blocknofill" [style.width.%]="100-userdata.strength" ></div>
+            </div>
+        <div class="main__detailtop__sep" ></div>
+        <div class="main__detailtop__left" >ENDURANCE</div>
+        <div class="main__detailtop__center main__detailtop__center--color2" >{{userdata.endurance}}</div>
+        <div class="main__detailtop__right" >
+            <div class="main__detailtop__right__blockfill main__detailtop__right__blockfill--c2"  [style.width.%]="userdata.endurance"  ></div>
+            <div class="main__detailtop__right__blocknofill" [style.width.%]="100-userdata.endurance" ></div>
+        </div>
+        <div class="main__detailtop__sep" ></div>
+        <div class="main__detailtop__left" >DEXTERITY</div>
+        <div class="main__detailtop__center main__detailtop__center--color3" >{{userdata.dexterity}}</div>
+        <div class="main__detailtop__right" >
+            <div class="main__detailtop__right__blockfill main__detailtop__right__blockfill--c3"  [style.width.%]="userdata.dexterity"  ></div>
+            <div class="main__detailtop__right__blocknofill" [style.width.%]="100-userdata.dexterity" ></div>
+        </div>
+        <div class="main__detailtop__sep" ></div>
+        <div class="main__detailtop__left" >DECISION MAKING</div>
+        <div class="main__detailtop__center main__detailtop__center--color4" >{{userdata.decisionmaking}}</div>
+        <div class="main__detailtop__right" >
+            <div class="main__detailtop__right__blockfill main__detailtop__right__blockfill--c4"  [style.width.%]="userdata.decisionmaking"  ></div>
+            <div class="main__detailtop__right__blocknofill" [style.width.%]="100-userdata.decisionmaking" ></div>
+        </div>
+    </div>
+    <div class="main__detailmid" >
+        <div class="main__detailmid__races" *ngFor="let race of userdata.races" >
+            <div class="main__detailmid__races__title" >{{race.title}}</div>
+            <div class="main__detailmid__races__challenges" *ngFor="let challenge of race.challenges" >
+                <div class="main__detailmid__races__challenges__left" >
+                    <div class="main__detailmid__races__challenges__left__nber" [ngStyle]="{'padding-left': (challenge.order>9) ? '7px' : '11px' }" >{{challenge.order}}</div>
+                    <div class="main__detailmid__races__challenges__left__title" >{{challenge.title}}</div>
+                </div>
+                <div class="main__detailmid__races__challenges__right" >
+                    <div class="main__detailmid__races__challenges__right__let" [ngStyle]="{'visibility': (challenge.p!=0) ? 'visible' : 'hidden' }" >P</div>
+                    <div class="main__detailmid__races__challenges__right__let" [ngStyle]="{'visibility': (challenge.r!=0) ? 'visible' : 'hidden' }" >R</div>
+                    <div class="main__detailmid__races__challenges__right__let" [ngStyle]="{'visibility': (challenge.w!=0) ? 'visible' : 'hidden','padding-left':'9px' }" >W</div>
+                    <div class="main__detailmid__races__challenges__right__let" [ngStyle]="{'visibility': (challenge.f!=0) ? 'visible' : 'hidden' }" >F</div>
+                    <div class="main__detailmid__races__challenges__right__graph" >
+                        <div class="main__detailmid__races__challenges__right__graph__block" >
+                            <div class="main__detailmid__races__challenges__right__graph__block__child" [ngStyle]="{'visibility': (challenge.p!=0) ? 'visible' : 'hidden' }" [style.width]="getWidthMiniBar(challenge.p)" [style.background-color]="getColor(challenge.p,'#41afca')" ></div>
+                        </div>
+                        <div class="main__detailmid__races__challenges__right__graph__block" >
+                            <div class="main__detailmid__races__challenges__right__graph__block__child" [ngStyle]="{'visibility': (challenge.r!=0) ? 'visible' : 'hidden' }" [style.width]="getWidthMiniBar(challenge.r)" [style.background-color]="getColor(challenge.r,'#f36a22')" ></div>
+                        </div>
+                        <div class="main__detailmid__races__challenges__right__graph__block" >
+                            <div class="main__detailmid__races__challenges__right__graph__block__child" [ngStyle]="{'visibility': (challenge.w!=0) ? 'visible' : 'hidden' }" [style.width]="getWidthMiniBar(challenge.w)" [style.background-color]="getColor(challenge.w,'#c8da2c')" ></div>
+                        </div>
+                        <div class="main__detailmid__races__challenges__right__graph__block" >
+                            <div class="main__detailmid__races__challenges__right__graph__block__child" [ngStyle]="{'visibility': (challenge.f!=0) ? 'visible' : 'hidden' }" [style.width]="getWidthMiniBar(challenge.f)" [style.background-color]="getColor(challenge.f,'#854c9d')" ></div>
+                        </div>    
+                    </div>
+                    <div class="main__detailmid__races__challenges__right__time" >{{challenge.time}}</div>
+                    <div class="main__detailmid__races__challenges__right__value" >{{challenge.value}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main__detailbottom" ></div>
+</div>

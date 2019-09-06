@@ -1,0 +1,31 @@
+{
+    "code":"0",
+    "msg":"",
+    "entity":
+        {
+            "userid":2, "strength":"55", "endurance":"30","dexterity":"60","decisionmaking":"40",
+            "races":[
+                {
+                    "title":"Post Apocalyptic Highway",
+                    "challenges":[
+                        {"order":"1", "title":"Hill Climb"          , "time":"00:17:35", "value":"5", "p":100 ,"r":80, "w":90,"f":40},
+                        {"order":"2", "title":"Run for the Hills"   , "time":"00:17:35", "value":"6", "p":50  ,"r":10, "w":0, "f":0},
+                        {"order":"3", "title":"Coded Doors"         , "time":"00:17:35", "value":"3", "p":50  ,"r":0,  "w":90,"f":0 },
+                        {"order":"4", "title":"Spear Throw"         , "time":"00:05:35", "value":"8", "p":0   ,"r":35, "w":0, "f":70},
+                        {"order":"5", "title":"Sand Bagging"        , "time":"00:17:35", "value":"2", "p":100 ,"r":0,  "w":90,"f":40}
+                    ]
+                }
+                ,
+                {
+                    "title":"Costa Rican Caves",
+                    "challenges":[
+                        {"order":"6",  "title":"Crevasse Crossing"      , "time":"00:17:35", "value":"5", "p":100 ,"r":80, "w":90,"f":40},
+                        {"order":"7",  "title":"The canopy"             , "time":"00:17:35", "value":"6", "p":50  ,"r":10, "w":0, "f":0},
+                        {"order":"8",  "title":"Dirty Armor"            , "time":"00:17:35", "value":"3", "p":50  ,"r":0,  "w":90,"f":0 },
+                        {"order":"9",  "title":"Navigational Challenge" , "time":"00:05:35", "value":"8", "p":0   ,"r":35, "w":0, "f":70},
+                        {"order":"10", "title":"Dead Weight"            , "time":"00:17:35", "value":"2", "p":100 ,"r":0,  "w":90,"f":40}
+                    ]
+                }
+            ]
+        }
+}

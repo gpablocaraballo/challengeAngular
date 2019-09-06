@@ -1,0 +1,32 @@
+$maxWindowWidth:100%; //the maximun windows size width
+$maxComponentWidth:100%; //the maximun components size width
+$screenNavBarHamburgerMaxWidth:1082px; //the max width screen to show bootstrap hamburguer menu
+$screenLarge: 1265px; //Large screen responsive for mediaqueries
+$screenMedium: 950px; //Medium screen responsive for mediaqueries
+$screenMediumCustom: 850px; //Custom/Medium screen responsive for mediaqueries
+$screenMediumCustomLabels:992px; //Custom/Medium screen for labels
+$screenSmall: 460px; //Medium screen responsive for mediaqueries
+$screenExtraSmall: 320px; //Medium screen responsive for mediaqueries
+$headerBackColor:yellow; //test purpose
+$screenLargePage2Min:1168px;
+$screenLargePage2Max:1350px;
+$headerBackImg: url('/assets/imgs/BG1.png'); //i use this img because it is smaller than the original one, i can do repeat-x with a lot of minor size
+//$headerBackImg: url('/assets/imgs/header-background-BG.png'); //this is the ORIGINAL PDF image for the header section, its look rare/odd in the transparent sector!
+$headerHeight:81px;
+$headerLinkColor:#ffffff; //color and mods of header's child elements
+$headerLinkDisableColor:#8a8c8e;
+$headerLinkFont:'Titillium Web', sans-serif;
+$headerLinkMarginR:78px;
+$headerSepBackImg: url('/assets/imgs/Layer1748-repeat-80.jpg');
+$mainBackImg0:url('/assets/imgs/splatter.png'); //splatter without map
+$mainBackImg:url('/assets/imgs/topoplussplatter.png'); //splatter plus map
+$mainNavBackImg: url('/assets/imgs/StrapTexture.jpg'); //jpg is smaller and almost the same than png (in this case)
+$mainNavHeight:120px;
+$mainNavTitleColor:#ffffff; //color of main content title
+$mainNavTitleFont:'Titillium Web', sans-serif; //font of main content title
+$gridDataFont:'Titillium Web', sans-serif; //font of grid data
+$gridDetailFont:'Titillium Web', sans-serif; //font of grid data
+$squareTimeLBackImg: url('/assets/imgs/squaretimeL.png'); //the image on the page1.pdf are very odd/rare...
+$squareTimeRBackImg: url('/assets/imgs/squaretimeR.jpg'); //the image on the page1.pdf are very odd/rare...
+//$mapDetailBckImg: url('/assets/imgs/TOPO Map.jpg'); //the map detail background
+$mapDetailBckImg: url('/assets/imgs/paper10.png'); //the map detail background

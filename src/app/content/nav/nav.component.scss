@@ -1,0 +1,101 @@
+@import '../../../sass/variables';
+.maincontainer{
+    padding-left:77px;
+    padding-right:77px;
+    width: 100%;
+}
+.mainnav{
+    background-image: $mainNavBackImg;
+    height: $mainNavHeight;
+    max-width:$maxComponentWidth !important;
+}
+.mainnav--small{
+    margin-left:0px !important;
+}
+.mainnav__title{
+padding-top:25px;
+padding-left:59px;
+color:$mainNavTitleColor !important;
+font-family:$mainNavTitleFont;
+font-size: 48px;
+font-weight: bold;
+}
+.mainnav__title--small{
+font-size: 20px;
+}
+.mainnav__infotitle{
+    font-size: 5px;
+    color:white;
+    height: 20px;
+    width:100%;
+}
+.mainnav__infotitle__leftdata{
+    height: 20px;
+    width: 58%;
+    float: left;
+}
+.mainnav__infotitle__rightdata{
+    height: 20px;
+    width: 42%;
+    float: left;
+}
+.mainnav__infotitle__rightdata__score{
+    color:#ffffff;
+    font-family:$gridDataFont;
+    font-weight:bold;
+    font-size:25px;
+    width:84px;
+    padding-left:18px;
+    height: 20px;
+    float:right;
+    font-size: 11px;
+}
+.mainnav__infotitle__rightdata__time{
+    color:#ffffff;
+    font-family:$gridDataFont;
+    font-weight:bold;
+    font-size:25px;
+    width:139px;
+    padding-left:55px;
+    height: 20px;
+    float:right;
+    font-size: 11px;
+}
+.mainnav__infotitle__rightdata__gender{
+    color:#ffffff;
+    font-family:$gridDataFont;
+    font-weight:bold;
+    width:80px;
+    padding-left:25px;
+    height: 20px;
+    float:right;
+    font-size: 11px;
+}
+.mainnav__infotitle__rightdata__age{
+    color:#ffffff;
+    font-family:$gridDataFont;
+    font-weight:bold;
+    width:84px;
+    padding-left:40px;
+    height: 20px;
+    float:right;
+    font-size: 11px;
+}
+.mainnav__infotitle__rightdata__bib{
+    color:#ffffff;
+    font-family:$gridDataFont;
+    font-weight:bold;
+    width:80px;
+    padding-left:40px;
+    height: 20px;
+    float:right;
+    font-size: 11px;
+}
+@media screen and (max-width: $screenLarge - 1) {
+    .mainnav__infotitle__leftdata{
+        width:40%;
+    }
+    .mainnav__infotitle__rightdata{
+        width:60%;
+    }
+}

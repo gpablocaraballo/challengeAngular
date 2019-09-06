@@ -1,0 +1,232 @@
+@import '../../../sass/variables';
+.main{
+    width:100%;
+    background-image:$mapDetailBckImg;
+    background-repeat: no-repeat;
+    background-position-x: 134px;
+}
+.main__detailtop{
+    width:100%;
+    min-height: 156px;
+    padding-left:185px;
+    padding-top: 31px;
+}
+.main__detailtop__sep{
+    width:100%;height:17px;
+}
+.main__detailtop__left{
+    float: left;
+    font-family:$gridDetailFont;
+    font-weight:bold;
+    width:146px;
+    color:#676767;
+    font-size: 12px;
+    margin-top:-4px;
+}
+.main__detailtop__center{
+    float:left;
+    width:44px;
+    font-family:$gridDetailFont;
+    font-weight:bold;
+    font-size:12px;
+    color:#41afca;
+    margin-top:-4px;
+}
+.main__detailtop__center--color1{
+    color:#41afca;
+}
+.main__detailtop__center--color2{
+    color:#f36a22;
+}
+.main__detailtop__center--color3{
+    color:#c8da2c;
+}
+.main__detailtop__center--color4{
+    color:#854c9d;
+}
+.main__detailtop__right{
+    float:left;
+    height:12px;
+    width:70%;
+    max-width:595px;
+}
+.main__detailtop__right__block{
+    height:12px;
+    float:left;
+}
+.main__detailtop__right__blockfill--c1{
+    background-color:#41afca;
+}
+.main__detailtop__right__blockfill--c2{
+    background-color:#f36a22;
+}
+.main__detailtop__right__blockfill--c3{
+    background-color:#c8da2c;
+}
+.main__detailtop__right__blockfill--c4{
+    background-color:#854c9d;
+}
+.main__detailtop__right__blockfill{
+    height:12px;
+    float:left;    
+}
+.main__detailtop__right__blocknofill{
+    background-color:#9a9a9a;
+    height:12px;
+    float:left;
+}
+.main__detailbottom{
+    width:100%;
+    height:44px;
+}
+.main__detailmid{
+    width:100%;
+}
+.main__detailmid__races{
+    width:100%;
+    padding-left:185px;
+    margin-bottom:35px;
+}
+.main__detailmid__races__title{
+    width:100%;
+    color:#2559a4;
+    font-family:$gridDetailFont;
+    font-weight:bold;
+    font-size:22px;
+    margin-bottom:34px;
+}
+.main__detailmid__races__challenges{
+    width:100%;
+    margin-bottom:16px;
+    height:31px;
+}
+.main__detailmid__races__challenges__left{
+    width:400px;
+    float:left;
+}
+.main__detailmid__races__challenges__right{
+    width:610px;
+    float:left;
+}
+.main__detailmid__races__challenges__left__nber{
+    float:left;
+    background-color:#000000;
+    color:white;
+    width:30px;
+    height:30px;
+    font-family:$gridDetailFont;
+    font-weight:bold;
+    font-size:12px;
+    padding-top:5px;
+    border-radius:50%;
+    //behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+}
+.main__detailmid__races__challenges__left__title{
+    float:left;
+    color:#000000;
+    font-family:$gridDetailFont;
+    font-weight:bold;
+    font-size:16px;
+    padding-top:2px;
+    padding-left:27px;
+}
+.main__detailmid__races__challenges__right__let{
+    float:left;
+    background-color:#818284;
+    color:#ffffff;
+    width:30px;
+    height:30px;
+    font-family:$gridDetailFont;
+    font-weight:bold;
+    font-size:12px;
+    padding-top:5px;
+    padding-left:11px;
+    margin-left:15px;
+    border-radius:50%;
+    //behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+}
+.main__detailmid__races__challenges__right__graph{
+    float:left;
+    width:42px;
+    height:30px;
+    margin-left:47px;
+}
+.main__detailmid__races__challenges__right__graph__block{
+    width:100%;
+    float:left;
+}
+.main__detailmid__races__challenges__right__graph__block__child{
+    height:1px;
+    float:left;
+    margin-bottom:7px;
+}
+.main__detailmid__races__challenges__right__time{
+    width:140px;
+    float:left;
+    height:30px;
+    border-left-color:#ababab;
+    border-left-width:2px;
+    border-left-style:dotted;
+    border-right-color:#ababab;
+    border-right-width:2px;
+    border-right-style:dotted;
+    color:#010101;
+    font-family:$gridDetailFont;
+    font-size:16px;
+    margin-left:17px;
+    text-align:center;
+}
+.main__detailmid__races__challenges__right__value{
+    width:80px;
+    float:left;
+    height:30px;
+    color:#2559a2;
+    font-family:$gridDetailFont;
+    font-size:16px;
+    text-align:center;
+}
+@media screen and (max-width: $screenLargePage2Max) {
+    .main__detailmid__races__challenges__left{
+        width:220px;
+    }
+    .main__detailtop__left{
+        width:100%;
+    }
+    .main__detailmid__races__challenges__right{
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+    }
+    .main__detailmid__races__challenges__right__let{
+        margin-left:0px;
+    }
+    .main__detailmid__races__challenges__left{
+        margin-top: 0px;
+    }
+    .main{
+        background-position-x: 0px;    
+    }
+    .main__detailmid__races__title{
+        float:left;
+        margin-bottom:10px;
+    }
+}
+@media screen and (max-width: $screenLargePage2Min) {
+    .main__detailmid__races__challenges__right{
+        border-bottom: 2px dotted #ababab;
+    }
+    .main__detailmid__races{
+        padding-left:10px;
+    }
+    .main__detailtop{
+        padding-left:10px;
+    }
+    .main__detailmid__races__challenges__right__graph{
+        margin-left:5px;
+    }
+    .main__detailmid__races__challenges__right__time{
+        width:70px;
+    }
+    .main__detailmid__races__challenges__right__value{
+        width:45px;
+    }
+}
